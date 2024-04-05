@@ -18,9 +18,9 @@ const divide = function(x, Y) {
     return result;
 };
 
-let number1 = 1;
-let operator = "+";
-let number2 = 3; 
+let number1;
+let operator;
+let number2; 
 
 const operate = function(number1, operator, number2) {
     if (operator = "+") {
@@ -40,3 +40,6 @@ const operate = function(number1, operator, number2) {
     }
 
 }
+
+const display = document.querySelector('#display');
+display.classList.add('display');
