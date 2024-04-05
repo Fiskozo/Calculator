@@ -18,7 +18,13 @@ const divide = function(x, Y) {
     return result;
 };
 
-let number1 = x;
+let number1 = number1;
 let operator = operator;
-let number2 = y;
+let number2 = number2;
 
+const operate = function(number1, operator, number2) {
+    if (operator = add) {
+        add(number1, number2)
+    }
+
+}
