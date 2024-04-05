@@ -18,19 +18,23 @@ const divide = function(x, Y) {
     return result;
 };
 
-let number1 
-let operator 
-let number2 
+let number1 = 1;
+let operator = "+";
+let number2 = 3; 
 
 const operate = function(number1, operator, number2) {
     if (operator = "+") {
-        add(number1, number2);
+        let result = add(number1, number2);
+        return result;
     }else if (operator = "-") {
-        subtract(number1, number2);
+        let result = subtract(number1, number2);
+        return result;
     }else if (operator = "*") {
-        multiply(number1, number2);
+        let result = multiply(number1, number2);
+        return result;
     } else if (operator = "/") {
-        divide(number1, number2);
+        let result= divide(number1, number2);
+        return result;
     }else {
         return prompt("error");
     }
