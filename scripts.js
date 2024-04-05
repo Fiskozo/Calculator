@@ -18,9 +18,9 @@ const divide = function(x, Y) {
     return result;
 };
 
-let number1 = number1;
-let operator = operator;
-let number2 = number2;
+let number1 
+let operator 
+let number2 
 
 const operate = function(number1, operator, number2) {
     if (operator = add) {
