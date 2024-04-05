@@ -18,3 +18,7 @@ const divide = function(x, Y) {
     return result;
 };
 
+let number1 = x;
+let operator = operator;
+let number2 = y;
+
