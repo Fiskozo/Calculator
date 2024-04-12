@@ -20,7 +20,7 @@ const divide = function(x, Y) {
 
 let number1;
 let operator;
-let number2; 
+let number2;
 
 const operate = function(number1, operator, number2) {
     if (operator = "+") {
@@ -43,3 +43,9 @@ const operate = function(number1, operator, number2) {
 
 const display = document.querySelector('#display');
 display.classList.add('display');
+const button = document.querySelector('.button');
+button.classList.add('button');
+
+const displayValue = function() {
+    let display = querySelector
+}
