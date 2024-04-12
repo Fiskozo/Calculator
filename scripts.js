@@ -21,6 +21,7 @@ const divideFunc = function(x, Y) {
 let number1;
 let number2;
 
+
 const operate = function(number1, operator, number2) {
     if (operator = "+") {
         let result = addFunc(number1, number2);
@@ -44,14 +45,11 @@ const display = document.querySelector('#display');
 display.classList.add('display');
 const clear = document.querySelector('#clear');
 clear.classList.add('clear');
-const number = document.querySelector('#number');
-number.classList.add('number');
-const operator = document.querySelector('#operator');
-operator.classList.add('operator');
+const number = document.querySelectorAll('#number');
+const operator = document.querySelectorAll('#operator');
 
 
+number.forEach(button => button.addEventListener('click', function() {
+    display.textContent += this.textContent;
+}))
 
-
-const displayValue = function() {
-    let display = querySelector
-}
