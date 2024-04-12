@@ -13,7 +13,7 @@ const multiply = function(x, Y) {
     return result;
 };
 
-const divide = function(x, Y) {
+const divideFunc = function(x, Y) {
     let result = x / Y;
     return result;
 };
@@ -33,7 +33,7 @@ const operate = function(number1, operator, number2) {
         let result = multiply(number1, number2);
         return result;
     } else if (operator = "/") {
-        let result= divide(number1, number2);
+        let result= divideFunc(number1, number2);
         return result;
     }else {
         return prompt("error");
@@ -43,8 +43,12 @@ const operate = function(number1, operator, number2) {
 
 const display = document.querySelector('#display');
 display.classList.add('display');
-const button = document.querySelector('.button');
-button.classList.add('button');
+const clear = document.querySelector('#clear');
+clear.classList.add('clear');
+const divide = document.querySelector('#divide');
+divide.classList.add('divide');
+const seven = document.querySelector('#seven');
+seven.classList.add('seven');
 
 const displayValue = function() {
     let display = querySelector
