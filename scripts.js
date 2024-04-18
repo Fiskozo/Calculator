@@ -24,6 +24,8 @@ const display = document.querySelector('#display');
 display.classList.add('display');
 const clear = document.querySelector('#clear');
 clear.classList.add('clear');
+const equals = document.querySelector('#equals');
+equals.classList.add('equals');
 const number = document.querySelectorAll('#number');
 const operator = document.querySelectorAll('#operator');
 let number1;
@@ -42,10 +44,11 @@ operator.forEach(button => button.addEventListener('click', function() {
         selectedOperator = this.textContent;
     }else{
         alert("error")
-    }
-      
+    }     
 }))
-
+equals.forEach(button => button.addEventListener('click', function(){
+    number2 = displayValue.split(NaN)
+}))
 
 const operate = function(number1, operator, number2) {
     if (operator = "+") {
