@@ -36,8 +36,13 @@ number.forEach(button => button.addEventListener('click', function() {
     displayValue = display.textContent;    
 }))
 operator.forEach(button => button.addEventListener('click', function() {
-    display.textContent = this.textContent;
-    selectedOperator = this.textContent;    
+    if (selectedOperator == undefined) {
+        display.textContent += this.textContent;
+        selectedOperator = this.textContent;   
+    }else{
+        
+    }
+      
 }))
 
 
