@@ -33,6 +33,7 @@ let number2;
 let displayValue;
 let selectedOperator;
 
+
 number.forEach(button => button.addEventListener('click', function() {
     display.textContent += this.textContent;
     displayValue = display.textContent;    
@@ -46,11 +47,14 @@ operator.forEach(button => button.addEventListener('click', function() {
         alert("error")
     }     
 }))
-equals.forEach(button => button.addEventListener('click', function(){
-    number2 = displayValue.split(NaN)
-}))
+equals.addEventListener('click', function(){
+    number2 = displayValue.split(selectedOperator)[1];
+    let result = operate(Number(number1), selectedOperator, Number(number2));
+    display.textContent = result;
+    selectedOperator = undefined;
+})
 
-const operate = function(number1, operator, number2) {
+/* operate = function(number1, operator, number2) {
     if (operator = "+") {
         let result = addFunc(number1, number2);
         return result;
@@ -66,8 +70,23 @@ const operate = function(number1, operator, number2) {
     }else {
         return prompt("error");
     }
-}
+} */
 
+
+function operate(number1, operator, number2) {
+  switch (operator) {
+  case "+":
+    return addFunc(number1, number2)
+  case "-":
+    return subtractFunc(number1, number2)
+  case "*":
+    return multiplyFunc(number1, number2)
+  case "/":
+    return divideFunc(number1, number2)
+  default:
+    throw("Did not recognise operator")
+  }
+}
 
 
 
