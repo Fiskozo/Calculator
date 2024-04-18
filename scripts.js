@@ -18,8 +18,27 @@ const divideFunc = function(x, Y) {
     return result;
 };
 
+
+
+const display = document.querySelector('#display');
+display.classList.add('display');
+const clear = document.querySelector('#clear');
+clear.classList.add('clear');
+const number = document.querySelectorAll('#number');
+const operator = document.querySelectorAll('#operator');
 let number1;
 let number2;
+let displayValue;
+let selectedOperator;
+
+number.forEach(button => button.addEventListener('click', function() {
+    display.textContent += this.textContent;
+    displayValue = display.textContent;    
+}))
+operator.forEach(button => button.addEventListener('click', function() {
+    display.textContent = this.textContent;
+    selectedOperator = this.textContent;    
+}))
 
 
 const operate = function(number1, operator, number2) {
@@ -38,18 +57,8 @@ const operate = function(number1, operator, number2) {
     }else {
         return prompt("error");
     }
-
 }
 
-const display = document.querySelector('#display');
-display.classList.add('display');
-const clear = document.querySelector('#clear');
-clear.classList.add('clear');
-const number = document.querySelectorAll('#number');
-const operator = document.querySelectorAll('#operator');
 
 
-number.forEach(button => button.addEventListener('click', function() {
-    display.textContent += this.textContent;
-}))
 
