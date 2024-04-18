@@ -36,11 +36,12 @@ number.forEach(button => button.addEventListener('click', function() {
     displayValue = display.textContent;    
 }))
 operator.forEach(button => button.addEventListener('click', function() {
-    if (selectedOperator == undefined) {
+    if (selectedOperator == undefined && displayValue != undefined) {
+        number1 = display.textContent;
         display.textContent += this.textContent;
-        selectedOperator = this.textContent;   
+        selectedOperator = this.textContent;
     }else{
-        
+        alert("error")
     }
       
 }))
