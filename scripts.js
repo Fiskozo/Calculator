@@ -15,8 +15,6 @@ const divideFunc = function(x, Y) {
     return result;
 };
 
-
-
 const display = document.querySelector('#display');
 display.classList.add('display');
 const clear = document.querySelector('#clear');
@@ -29,7 +27,6 @@ let number1;
 let number2;
 let displayValue;
 let selectedOperator;
-
 
 number.forEach(button => button.addEventListener('click', function() {
     display.textContent += this.textContent;
