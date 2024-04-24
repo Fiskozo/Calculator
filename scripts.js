@@ -48,11 +48,14 @@ operator.forEach(button => button.addEventListener('click', function() {
     }     
 }))
 equals.addEventListener('click', function(){
-    number2 = displayValue.split(selectedOperator)[1];
+  number2 = displayValue.split(selectedOperator)[1];
+  if (number1 == undefined || number2 == undefined || operator == undefined) {
+    console.error();
+  }else{
     let result = operate(Number(number1), selectedOperator, Number(number2));
-    display.textContent = result;
+    display.textContent = result.toFixed(2);
     selectedOperator = undefined;
-})
+  }})
 
 operate = function(number1, operator, number2) {
     if (operator == "÷" && number2 == "0"){
