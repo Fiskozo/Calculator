@@ -50,7 +50,12 @@ equals.addEventListener('click', function(){
     display.textContent = result.toFixed(2);
     selectedOperator = undefined;
   }})
-
+clear.addEventListener('click', function(){
+  number1 = undefined;
+  selectedOperator = undefined;
+  number2 = undefined;
+  display.textContent = 0;
+})
 operate = function(number1, operator, number2) {
     if (operator == "÷" && number2 == "0"){
         alert("Cant divide by zero :D");
