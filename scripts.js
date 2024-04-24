@@ -1,13 +1,11 @@
 const addFunc = function(x, y) {
     let result = x + y;
     return result;	
-  };
-  
+  }; 
 const subtractFunc = function(x, y) {
     let result = x - y;
     return result;		
   };
-
 const multiplyFunc = function(x, Y) {
     let result = x * Y;
     return result;
