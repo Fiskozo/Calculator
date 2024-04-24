@@ -54,39 +54,39 @@ equals.addEventListener('click', function(){
     selectedOperator = undefined;
 })
 
-/* operate = function(number1, operator, number2) {
-    if (operator = "+") {
-        let result = addFunc(number1, number2);
-        return result;
+operate = function(number1, operator, number2) {
+    if (operator == "÷" && number2 == "0"){
+        alert("Cant divide by zero :D");
+    }else if(operator = "+") {
+      return addFunc(number1, number2);
     }else if (operator = "-") {
-        let result = subtractFunc(number1, number2);
-        return result;
+      return subtractFunc(number1, number2);
     }else if (operator = "*") {
-        let result = multiplyFunc(number1, number2);
-        return result;
+      return multiplyFunc(number1, number2);
     } else if (operator = "/") {
-        let result= divideFunc(number1, number2);
-        return result;
+      return divideFunc(number1, number2);
     }else {
-        return prompt("error");
+      return prompt("error");
     }
-} */
+}
 
 
-function operate(number1, operator, number2) {
+/* function operate(number1, operator, number2) {
   switch (operator) {
+    case "÷" && number2 == "0":
+    throw("cant divide by 0 dumbass")
   case "+":
     return addFunc(number1, number2)
   case "-":
     return subtractFunc(number1, number2)
   case "*":
     return multiplyFunc(number1, number2)
-  case "/":
+  case "÷":
     return divideFunc(number1, number2)
   default:
     throw("Did not recognise operator")
   }
 }
-
+ */
 
 
