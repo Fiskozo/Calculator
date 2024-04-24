@@ -54,13 +54,13 @@ equals.addEventListener('click', function(){
 operate = function(number1, operator, number2) {
     if (operator == "÷" && number2 == "0"){
         alert("Cant divide by zero :D");
-    }else if(operator = "+") {
+    }else if(operator == "+") {
       return addFunc(number1, number2);
-    }else if (operator = "-") {
+    }else if (operator == "-") {
       return subtractFunc(number1, number2);
-    }else if (operator = "*") {
+    }else if (operator == "*") {
       return multiplyFunc(number1, number2);
-    } else if (operator = "/") {
+    } else if (operator == "/") {
       return divideFunc(number1, number2);
     }else {
       return prompt("error");
