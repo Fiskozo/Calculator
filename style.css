@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+
+#container {
+    border: solid;
+    padding: 2%;
+    background-color: grey;
+}
+
+#display {
+    height: 70px;
+    font-size: 70px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: end;
+    margin-bottom: 4px;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+
+#number, #operator, #equals{
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+
+#clear, #c {
+    width: 144px;
+    height: 70px;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+#clear {
+    background-color: rgba(231, 71, 71, 0.692);
+}
+
+#c {
+    background-color: rgba(0, 0, 255, 0.438);
+}
