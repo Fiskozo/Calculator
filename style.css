@@ -13,14 +13,19 @@ body {
 }
 
 #display {
-    height: 70px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-height: 70px;
+    width: 288px;
     font-size: 70px;
     border-style: solid;
     border-width: 2px;
-    text-align: end;
+    text-align: right;
     margin-bottom: 4px;
     background-color: rgba(255, 255, 255, 0.445);
     border-radius: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 #number, #operator, #equals{
